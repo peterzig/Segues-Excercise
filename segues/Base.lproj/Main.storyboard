@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="segues" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,136 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpY-Kg-cIf">
+                                <rect key="frame" x="196" y="194" width="208" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Idź do czerwonego!">
+                                    <color key="titleColor" red="1" green="0.045902833980000002" blue="0.10037279490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S7f-hq-vKq" kind="showDetail" id="eVj-OQ-zTD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-9m-hLE">
+                                <rect key="frame" x="209" y="232" width="182" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Idź do zielonego!">
+                                    <color key="titleColor" red="0.0047851792729470726" green="0.46674627590673579" blue="0.007427973122640842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O5Q-aH-4LI" kind="showDetail" id="Kd9-3R-1Lo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLM-lL-lzy">
+                                <rect key="frame" x="279" y="85" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.061811741286078692" green="0.83521590853393657" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="69a-9m-hLE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9yT-af-p3t"/>
+                            <constraint firstItem="WpY-Kg-cIf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sfz-41-NaT"/>
+                            <constraint firstItem="xLM-lL-lzy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="alv-ks-Vys"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-125" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="PIC-ku-cGz">
+            <objects>
+                <viewController id="S7f-hq-vKq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UT0-Pp-GKV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wa2-6J-h8s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wgT-tL-xWa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOY-fv-Hzj">
+                                <rect key="frame" x="196" y="165" width="208" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Idź do zielonego!">
+                                    <color key="titleColor" red="0.0086918539590000003" green="1" blue="0.0079727527539999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O5Q-aH-4LI" kind="showDetail" id="mw2-IR-Mc9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqw-gB-fY9">
+                                <rect key="frame" x="177" y="205" width="246" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Idź do turkusowego!"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="o6i-j4-NtG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.011436856929999999" blue="0.1056640767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mqw-gB-fY9" firstAttribute="centerX" secondItem="wgT-tL-xWa" secondAttribute="centerX" id="5ZL-ho-rBL"/>
+                            <constraint firstItem="wOY-fv-Hzj" firstAttribute="centerX" secondItem="wgT-tL-xWa" secondAttribute="centerX" id="ebx-1f-TGd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXO-0M-NNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="i08-np-hKw">
+            <objects>
+                <viewController id="O5Q-aH-4LI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e8A-it-jth"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZC-9m-cFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IW6-nQ-I1p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erf-Cz-rAW">
+                                <rect key="frame" x="185" y="230" width="230" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Idź do turkusowego!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="vXt-Az-Usw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBJ-3o-fCu">
+                                <rect key="frame" x="196" y="192" width="208" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Idź do czerwonego!">
+                                    <color key="titleColor" red="1" green="0.011436856929999999" blue="0.1056640767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="S7f-hq-vKq" kind="showDetail" id="whk-4D-2Qr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0086918539590000003" green="1" blue="0.0079727527539999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qBJ-3o-fCu" firstAttribute="centerX" secondItem="IW6-nQ-I1p" secondAttribute="centerX" id="5li-xm-PXc"/>
+                            <constraint firstItem="erf-Cz-rAW" firstAttribute="centerX" secondItem="IW6-nQ-I1p" secondAttribute="centerX" id="QbC-CT-mXT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rn-zA-e5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541" y="1052"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eVj-OQ-zTD"/>
+        <segue reference="o6i-j4-NtG"/>
+        <segue reference="Kd9-3R-1Lo"/>
+    </inferredMetricsTieBreakers>
 </document>
